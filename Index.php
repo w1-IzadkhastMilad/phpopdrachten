@@ -30,12 +30,13 @@
                 <li>Hoofdstuk 2
                     <ul>
                         <li><a href="hoofdstuk2/Opdracht_2.1.php">Opdracht 2.1</a></li>
-                        <li><a href="">Opdracht 2.2</a></li>
+                        <li><a href="hoofdstuk2/Opdracht_2.2.php">Opdracht 2.2</a></li>
                     </ul>
                 </li>
                 <li>Hoofdstuk 3
                     <ul>
                         <li><a href="">Opdracht 3.1</a></li>
+                        
                         <li><a href="">Opdracht 3.2</a></li>
                         <li><a href="">Opdracht 3.3</a></li>
                     </ul>
