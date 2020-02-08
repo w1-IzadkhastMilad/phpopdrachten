@@ -24,16 +24,16 @@
 <h2>Uitwerking van <a href="../Index.php"> PHP-opdrachten</a></h2>
 <div class="box">
     <?php
-    $elf = "Elfstedentocht";
-    $alve = "Alvestêdetocht";
-    $km = "200";
-    $schaats = "schaatstocht";
-    $natuur = "natuurijs";
-    $kvdfes = "Koninklijke Vereniging De Friesche Elf Steden";
-    $leeuw = "Leeuwarden";
-    $fries = "Friesland";
-    $num = "15";
-    $jaar = "1909";
+    $elf = "<u>Elfstedentocht</u>";
+    $alve = "<u>Alvestêdetocht</u>";
+    $km = "<u>200</u>";
+    $schaats = "<u>schaatstocht</u>";
+    $natuur = "<u>natuurijs</u>";
+    $kvdfes = "<u>Koninklijke Vereniging De Friesche Elf Steden</u>";
+    $leeuw = "<u>Leeuwarden</u>";
+    $fries = "<u>Friesland</u>";
+    $num = "<u>15</u>";
+    $jaar = "<u>1909</u>";
     $verhaal = "De $elf (Fries: $alve) is een $km
                 kilometer lange $schaats over $natuur die wordt
                 georganiseerd door de $kvdfes. $leeuw, de hoofdstad van $fries, is start- en
