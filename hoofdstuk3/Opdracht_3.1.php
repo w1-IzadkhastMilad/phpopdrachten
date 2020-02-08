@@ -40,7 +40,7 @@
                 aankomstplaats. De $elf is inmiddels $num maal
                 verreden en werd voor het eerst in $jaar gereden en wordt
                 maximaal 1 keer per winter gehouden.";
-    echo ("$verhaal");
+    echo ("<p>$verhaal</p>");
     ?>
 </div>
 </body>
