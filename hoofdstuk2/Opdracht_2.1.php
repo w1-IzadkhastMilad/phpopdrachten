@@ -24,7 +24,7 @@
 <h2>Uitwerking van <a href="../Index.php"> PHP-opdrachten</a></h2>
 <div class="box">
     <?php
-    echo ("Hello World!")
+    echo ("<p>Hello World!</p>")
     ?>
 </div>
 </body>
