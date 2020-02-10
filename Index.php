@@ -1,9 +1,9 @@
 <?php
 /**
- * User: ${USER}
- * Date: ${DATE}
- * Time: ${TIME}
- * File: ${PROJECT_NAME}
+ * User: milad
+ * Date: 3-2-2020
+ * Time: 11:00
+ * File: Index.php
  */
 ?>
 
