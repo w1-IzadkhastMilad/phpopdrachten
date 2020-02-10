@@ -23,7 +23,7 @@
 <body>
 <h2>Uitwerking van <a href="../Index.php"> PHP-opdrachten</a></h2>
 <div class="box">
-
+<p> test</p>
 </div>
 </body>
 </html>
