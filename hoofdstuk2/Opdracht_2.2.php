@@ -40,6 +40,7 @@
     echo ("<h1>Taak 3</h1>");
     echo ("<p>$text1, $text3 $text4, ondanks $text6 $text2?</p>");
     echo ("<p>$text7 $text5 $text4 eigenlijk $text2 blijkt te zijn?</p>");
+
     ?>
 </div>
 </body>
