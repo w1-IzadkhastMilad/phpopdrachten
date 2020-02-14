@@ -40,7 +40,16 @@
                 aankomstplaats. De $elf is inmiddels $num maal
                 verreden en werd voor het eerst in $jaar gereden en wordt
                 maximaal 1 keer per winter gehouden.";
+    echo ("<h1>Taak 1</h1>");
     echo ("<p>$verhaal</p>");
+
+    $verhaal2 = "De " . $elf .  " (Fries: " . $alve . ") is een " . $km . " kilometer lange " . $schaats . " over " . $natuur . " die wordt
+                georganiseerd door de " . $kvdfes .". " . $leeuw . ",  de hoofdstad van " . $fries . ",  is start- en
+                aankomstplaats. De " . $elf . " is inmiddels " . $num . " maal
+                verreden en werd voor het eerst in " . $jaar . " gereden en wordt
+                maximaal 1 keer per winter gehouden.";
+    echo ("<h1>Taak 2</h1>");
+    echo ("<p>$verhaal2</p>");
     ?>
 </div>
 </body>
