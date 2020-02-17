@@ -33,6 +33,8 @@
     $leeuw = "<u>Leeuwarden</u>";
     $fries = "<u>Friesland</u>";
     $num = "<u>15</u>";
+
+
     $jaar = "<u>1909</u>";
     $verhaal = "De $elf (Fries: $alve) is een $km
                 kilometer lange $schaats over $natuur die wordt
