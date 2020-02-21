@@ -23,21 +23,54 @@
 <body>
 <h2>Uitwerking van <a href="../Index.php"> PHP-opdrachten</a></h2>
 <div class="box">
+    <h1>Taak 1 & 2</h1>
     <?php
-    $trafficLightColor = "oranje";
-    $ambulanceComing = false;
+    $trafficLightColor = "groen"; // colors: groen / oranje / rood
+    $ambulanceComing = false; //options: true / false
     $driveOn = true;
 
     if($trafficLightColor == "groen" && $ambulanceComing == false){
-        $driveOn = true;
-        echo("<span style=\"color:lawngreen;text-align:center;\">U mag doorrijden</span>");
+        echo("<p><span style=\"color:lawngreen;text-align:center;\">U mag doorrijden</span></p>");
     }
-    else if($trafficLightColor == "oranje" || $ambulanceComing == true || $trafficLightColor == "rood"){
+    else if($trafficLightColor = "oranje" || $trafficLightColor = "rood" || $ambulanceComing = true){
+
         $driveOn = false;
     }
     else if($driveOn == false){
-        echo ("<span style=\"color:red;text-align:center;\">U moet stoppen</span>");
+        echo ("<p><span style=\"color:red;text-align:center;\">U moet stoppen</span></p>");
     }
+    ?>
+
+    <h1>Taak 3</h1>
+    <?php
+    $countryName = ""; // country: België / Bulgarije / Cyprus / Nederland / Zweden
+    $currentAge = 16; // own age
+
+    if($countryName == "België"){
+        if($currentAge >= 16 && $currentAge <=17){
+            echo ("alleen zwakke");
+        }
+        else if($currentAge >= 18){
+            echo("alle drank");
+        }
+    }
+    else if(($countryName == "Bulgarije" || $countryName == "Nederland") && $currentAge == 18){
+        echo("alle drank");
+    }
+
+    else if ($countryName == "Zweden"){
+        if($currentAge >= 18 && $currentAge <=19){
+            echo ("alleen zwakke");
+        }
+        else if($currentAge >= 20){
+            echo("alle drank");
+        }
+    }
+    else if($currentAge <= 15){
+        echo("niets");
+    }
+
+
     ?>
 </div>
 </body>
