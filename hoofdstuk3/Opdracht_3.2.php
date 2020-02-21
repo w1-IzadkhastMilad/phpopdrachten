@@ -29,12 +29,16 @@
     $driveOn = true;
 
     if($trafficLightColor == "groen" && $ambulanceComing == false){
-        echo("<p><span style=\"color:lawngreen;text-align:center;\">U mag doorrijden</span></p>");
+        $driveOn = true;
     }
-    else if($trafficLightColor = "oranje" || $trafficLightColor = "rood" || $ambulanceComing = true){
+    else if($trafficLightColor == "oranje" || $trafficLightColor == "rood" || $ambulanceComing == true){
 
         $driveOn = false;
     }
+    if($driveOn == true){
+        echo("<p><span style=\"color:lawngreen;text-align:center;\">U mag doorrijden</span></p>");
+    }
+
     else if($driveOn == false){
         echo ("<p><span style=\"color:red;text-align:center;\">U moet stoppen</span></p>");
     }
