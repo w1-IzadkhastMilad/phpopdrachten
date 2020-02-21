@@ -51,29 +51,28 @@
 
     if($countryName == "België"){
         if($currentAge >= 16 && $currentAge <=17){
-            echo ("alleen zwakke");
+            echo ("Je mag hier zwakke alchol drinken");
         }
         else if($currentAge >= 18){
-            echo("alle drank");
+            echo("Je mag hier alle alchol drinken");
         }
     }
     else if(($countryName == "Bulgarije" || $countryName == "Nederland") && $currentAge == 18){
-        echo("alle drank");
+        echo("Je mag hier alle alchol drinken");
     }
 
     else if ($countryName == "Zweden"){
         if($currentAge >= 18 && $currentAge <=19){
-            echo ("alleen zwakke");
+            echo ("Je mag hier zwakke alchol drinken");
         }
         else if($currentAge >= 20){
-            echo("alle drank");
+            echo("Je mag hier alle alchol drinken");
         }
     }
     else if($currentAge <= 15){
-        echo("niets");
+        echo("Je mag nog geen alchol drinken");
     }
-
-
+    echo ("Je woont in $countryName en bent $currentAge jaar oud");
     ?>
 </div>
 </body>
