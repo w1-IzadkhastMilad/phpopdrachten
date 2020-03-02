@@ -2,7 +2,7 @@
 /**
  * User: milad
  * Date: 2-3-2020
- * Time: 10:58
+ * Time: 11:54
  * File: Opdracht_4.2.php
  */
 ?>
@@ -11,9 +11,8 @@
 include "../Include/header.php"
 ?>
 
-<p>Gemaakt in footer.php</p>
 <?php
-
+include "script.php"
 ?>
 
 
