@@ -63,32 +63,38 @@ while($year >= 2003){
 
 // Taak 7
 $task7 = '';
-for($age = 17; $age > 0; $age--) {
+$years = date('Y');
+for($ages = 17; $ages > 0; $ages--) {
 
-    switch ($age) {
+    switch ($ages) {
         case 0:
-            $task7 .= "<p>In 2003 ben ik $age geboren en was ik een baby</p>";
+            $task7 .= "<p>In $years ben ik $ages geboren en was ik een baby</p>";
             break;
         case 2:
-            $task7 .= "<p>In 2005? was ik $age jaar oud en werd ik een peuter</p>";
+            $task7 .= "<p>In $years? was ik $ages jaar oud en werd ik een peuter</p>";
             break;
         case 4:
-            $task7 .= "<p>In 2007? was ik $age jaar oud en werd ik een kleuter</p>";
+            $task7 .= "<p>In $years? was ik $ages jaar oud en werd ik een kleuter</p>";
             break;
         case 8:
-            $task7 .= "<p>In 2011? was ik $age jaar oud en werd ik een tiener</p>";
+            $task7 .= "<p>In $years? was ik $ages jaar oud en werd ik een tiener</p>";
             break;
         case 12:
-            $task7 .= "<p>In 2015? was ik $age jaar oud en werd ik een puber</p>";
+            $task7 .= "<p>In $years? was ik $ages jaar oud en werd ik een puber</p>";
             break;
         case 18:
-            $task7 .= "<p>In 2021? was ik $age jaar oud en werd ik een adolescent</p>";
+            $task7 .= "<p>In $years? was ik $ages jaar oud en werd ik een adolescent</p>";
             break;
         case 20:
-            $task7 .= "<p>In 2023? was ik $age jaar oud en werd ik een volwassen</p>";
+            $task7 .= "<p>In $years? was ik $ages jaar oud en werd ik een volwassen</p>";
+            break;
+        default:
+            $task7 .= "<p>In $years? was ik $ages jaar oud</p>";
             break;
     }
+    $year--;
 }
+
 
 
 

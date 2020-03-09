@@ -31,10 +31,12 @@ $datumDag = date('w',$nu);
 echo "<br>Morgen is het de ".$datumDag. " dag en de datum is ".$datumVandaag;
 echo"<br>";
 echo "Morgen is het ".$dagenWeek[$datumDag]. " en de datum is ". $datumVandaag;
+?>
 
+<?php
 
-
-
+echo "<br>";
+echo "Dag $datumDag is " . $dagenWeek . $datumVandaag;
 ?>
 
 
