@@ -41,14 +41,14 @@ echo "<br>";
 
 echo "<h1>Opdracht 4.4</h1>";
 
-$dagenVanDeWeek = array("zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag");
-$test = "";
+$dagenVanDeWeek = array("zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag"); //Dit is een array met alle dagen van de week
+$test = ""; //Dit is een lege string
 for($x=0; $x <8; $x++) {
-    $dagnr = date('w', strtotime("+$x days"));
-    $eendatum = date('d-m-Y', strtotime("+$x days"));
-    $test .= "Dag $dagnr is {$dagenVanDeWeek[$dagnr]} $eendatum <br>";
-}
-echo $test
+    $dagnr = date('w', strtotime("+$x days")); //Dit laat de nummer van de dag zien van een week
+    $eendatum = date('d-m-Y', strtotime("+$x days")); //Dit laat de datums zien voor de week
+    $test .= "Dag $dagnr is {$dagenVanDeWeek[$dagnr]} $eendatum <br>"; //Hierin laat laat ik zien wat er in de lege string moet staan
+}//Dit is een for loop om alles opnieuw af te spelen
+echo $test //Dit zorgt er voor dat het word laten zien op het scherm
 ?>
 
 
