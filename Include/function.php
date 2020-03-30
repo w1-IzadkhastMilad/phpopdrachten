@@ -30,7 +30,7 @@ function getKans1Op() {
  * Deze functie vergelijkt de 1 op kans ten opzichte van andere 'normale' doodsoorzaken
  * en returned een vergelijking tov andere oorzaken
  */
-function vergelijkOorzaken ($covidkans) {
+function vergelijkOorzaken($covidkans) {
 
     $kansen =[119998,81701,62950,51199,6174,5981,5862,4147,1235,1073,802,623,300,272,184,139,115,85,28,7,6];
     $oorzaken = ["Aangevallen worden door een of meerdere honden"," Door de bliksem worden getroffen"," Gestoken worden door een wesp of een bij"," Omkomen in een storm"," Sterven van de hitte"," Slachtoffer worden van een verdwaalde kogel"," Omkomen in een"," Omkomen in een fietsongeluk"," Omkomen in een brand"," Verdrinken"," Omkomen in een motorongeluk"," Overreden worden"," Neergeschoten worden"," Slachtoffer worden van een auto-ongeluk als passagier"," Omkomen door een valpartij"," Per ongeluk vergiftigd worden"," Overlijden ten gevolge van een wonde die je jezelf hebt toegebracht"," Slachtoffer worden van een auto-ongeluk, maar dan als chauffeur"," Overlijden aan de gevolgen van een hartaanval"," Kanker"," Hart- en vaatziekten"];
