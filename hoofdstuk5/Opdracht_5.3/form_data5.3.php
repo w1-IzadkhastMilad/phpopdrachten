@@ -66,15 +66,22 @@ include "../../Include/function.php"
     </tr>
     <tr>
         <th>Kans per ontmoeting op besmetting</th>
-        <td><?php echo $_POST[echoKans()]; ?>%</td>
+        <td><?php echoKans() ?>%</td>
     </tr>
     <tr>
         <th>Kans is 1 op</th>
-        <td><?php echo $_POST[getKans1Op()]; ?>%</td>
+        <td><?php
+            $kans1op = getKans1Op();
+            echo $kans1op;
+
+        ?></td>
     </tr>
     <tr>
         <td colspan="2">
-            <?php echo $_POST[vergelijkOorzaken ()]; ?>
+            <?php
+            $vergelijkOorzaken = vergelijkOorzaken ($kans1op);
+            echo $vergelijkOorzaken;
+            ?>
         </td>
     </tr>
 </table>
