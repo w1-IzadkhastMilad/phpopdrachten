@@ -32,9 +32,9 @@ include "../Include/header.php"
     </select><br>
 
     <label>Leerjaar</label><br>
-        <input name="Leerjaar" type="radio">1e leerjaar</input><br>
-        <input name="Leerjaar" type="radio">2e leerjaar</input><br>
-        <input name="Leerjaar" type="radio">3e leerjaar</input><br>
+        <input name="Leerjaar" type="radio" value="1e leerjaar">1e leerjaar</input><br>
+        <input name="Leerjaar" type="radio" value="2e leerjaar">2e leerjaar</input><br>
+        <input name="Leerjaar" type="radio" value="3e leerjaar">3e leerjaar</input><br>
 
     <input name="Aanmelden" type="checkbox" value="ja">Ik wil me aanmeldden bij de succesklas<br>
     <input name="Verwijder" type="checkbox" value="ja">Verwijder mijn gegevens uit het systeem<br>

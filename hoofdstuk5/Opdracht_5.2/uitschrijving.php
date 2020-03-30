@@ -60,7 +60,7 @@
             <th>Reden van uitschrijving</th>
         </tr>
         <tr>
-            <td><?php echo $_GET["Verwijder"]; ?></td>
+            <td><?php echo $_GET["Bericht"]; ?></td>
         </tr>
     </table>
 
