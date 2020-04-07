@@ -12,26 +12,24 @@ include "../Include/header.php"
 ?>
 <style>
     .groen{
-        display: none;
         color: green;
     }
     .rood{
-        display: none;
         color: red;
     }
 </style>
 <form action="Opdracht_5.4.php" method="post">
     <label>Komt er een ambulance aan?</label>
-    <input name="ambulanceComing" type="radio" value="ja">ja</input>
-    <input name="ambulanceComing" type="radio" value="nee">nee</input><br>
+    <input name="ambulanceComing" type="radio" value="ja">ja
+    <input name="ambulanceComing" type="radio" value="nee">nee<br>
 
     <label>Stoplicht kleur?</label>
-    <input name="trafficLightColor" type="radio" value="groen">Groen</input>
-    <input name="trafficLightColor" type="radio" value="oranje">Oranje</input>
-    <input name="trafficLightColor" type="radio" value="red">Rood</input><br>
+    <input name="trafficLightColor" type="radio" value="groen">Groen
+    <input name="trafficLightColor" type="radio" value="oranje">Oranje
+    <input name="trafficLightColor" type="radio" value="red">Rood<br>
     <input type="submit" name="verzenden" value="Verzend">
 </form>
-
+<div class="box">
 <?php
 //de action is hetzelfde script als het formulier, eerst testen of het formulier
 //verzonden is
@@ -50,28 +48,17 @@ ambulance aan.";
  //Bepalen of je wel of niet mag doorrijden
  if ($trafficLightColor <> "groen" && $ambulanceComing == 'ja')
  {
-     echo "<div class='groen'>U mag doorrijden</div>
-            <style type=\"text/css\">
-                #id-element {
-                    display: inline-block;
-                 }
-            </style>;";
+     echo "<p class='groen'>U mag doorrijden</p>";
 
  }
  else
  {
-     echo " <div class='rood'>U moet stoppen</div>
-            <style type=\"text/css\">
-                #id-element {
-                    display: inline-block;
-                 }
-            </style>;";
+     echo " <p class='rood'>U moet stoppen</p>";
  }
  }
- echo "</div>";
  }
 ?>
-
+</div>
 
 <?php
 include "../Include/footer.php"
