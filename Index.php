@@ -56,6 +56,11 @@
                         <li><a href="hoofdstuk5/Opdracht_5.4.php">Opdracht 5.4</a></li>
                     </ul>
                 </li>
+                <li>Eindopdracht
+                    <ul>
+                        <li><a href="Eindopdracht/login.php">Opdracht 5.1</a></li>
+                    </ul>
+                </li>
             </ul>
         </li>
     </ul>
