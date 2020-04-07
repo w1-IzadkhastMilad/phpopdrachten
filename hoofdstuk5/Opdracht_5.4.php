@@ -27,9 +27,9 @@ include "../Include/header.php"
     <input name="trafficLightColor" type="radio" value="groen">Groen
     <input name="trafficLightColor" type="radio" value="oranje">Oranje
     <input name="trafficLightColor" type="radio" value="red">Rood<br>
-    <input type="submit" name="verzenden" value="Verzend">
+    <input type="submit" name="submit" value="submit">
 </form>
-<div class="box">
+
 <?php
 //de action is hetzelfde script als het formulier, eerst testen of het formulier
 //verzonden is
@@ -46,46 +46,20 @@ if (isset($_POST['submit'])) {
  echo "Stoplicht staat op $trafficLightColor en er komt: $ambulanceComing een
 ambulance aan.";
  //Bepalen of je wel of niet mag doorrijden
- if ($trafficLightColor <> "groen" && $ambulanceComing == 'ja')
+ if ($trafficLightColor == "groen" && $ambulanceComing == 'nee')
  {
-     echo "<p class='groen'>U mag doorrijden</p>";
-
+     echo "<div class='groen box'>U mag doorrijden";
  }
  else
  {
-     echo " <p class='rood'>U moet stoppen</p>";
+     echo " <div class='rood box'>U moet stoppen";
  }
+ echo "</div>";
  }
  }
 ?>
-</div>
 
 <?php
 include "../Include/footer.php"
 ?>
 
-
-
-
-
-
-
-
-<?php
-
-$trafficLightColor = "groen"; // colors: groen / oranje / rood
-$ambulanceComing = false; //options: true / false
-$driveOn = true;
-
-if ($trafficLightColor == "groen" && $ambulanceComing == false) {
-    $driveOn = true;
-} else if ($trafficLightColor == "oranje" || $trafficLightColor == "rood" || $ambulanceComing == true) {
-
-    $driveOn = false;
-}
-if ($driveOn == true) {
-    echo("<p><span style=\"color:lawngreen;text-align:center;\">U mag doorrijden</span></p>");
-} else if ($driveOn == false) {
-    echo("<p><span style=\"color:red;text-align:center;\">U moet stoppen</span></p>");
-}
-?>
