@@ -12,7 +12,9 @@ include "../Include/header.php"
 ?>
 
 <?php
+
 echo "Welcome, Thanks for logging in."
+
 ?>
 
 <?php

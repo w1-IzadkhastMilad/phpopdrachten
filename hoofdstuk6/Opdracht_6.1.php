@@ -18,9 +18,11 @@ include "../Include/header.php"
         <input type="password" name="password"><br>
         <input type="submit" value="Submit">
     </form>
+
 <?php
 echo $message;
 ?>
+
 <?php
 include "../Include/footer.php"
 ?>

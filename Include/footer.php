@@ -18,8 +18,6 @@
     elseif ($uur >= 17 && $uur <= 0){
         $moment = 'Goedenavond';
     }
-
-
     ?>
 
     <?php
@@ -30,7 +28,6 @@
     else {
         $bezoeker = "onbekende bezoeker". "&nbsp;<a href='/phpopdrachten/hoofdstuk6/Opdracht_6.1.php'>Login</a>";
     }
-
     echo $moment . " " . $bezoeker . ', &copy; ' . $jaar;
     ?>
 </div>

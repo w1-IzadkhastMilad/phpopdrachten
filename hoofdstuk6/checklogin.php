@@ -25,7 +25,7 @@ foreach($authUsers as $user => $password) {
         session_start();
         $_SESSION['username'] = $_POST['username'];
         header('location: welkom.php');
-    } else {
+    } else{
         $message = "Ongeldige username/wachtwoord, probeer het nog eens.";
     }
 }
