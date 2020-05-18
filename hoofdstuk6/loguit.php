@@ -13,7 +13,7 @@ include "../Include/header.php"
 
 <?php
 
-session_start();
+
 session_destroy();
 
 header('location: Opdracht_6.1.php');

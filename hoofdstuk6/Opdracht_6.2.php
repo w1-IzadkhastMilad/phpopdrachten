@@ -10,6 +10,12 @@
 <?php
 include "../Include/header.php"
 ?>
+<style>
+    img{
+        width:200px;
+    }
+</style>
+
 <form id="gameFrm" method="get" action="Opdracht_6.2.php">
     <div class="float">
         <input type="radio"onchange="document.getElementById('gameFrm').submit();" name="keuze" value="steen">steen
@@ -26,10 +32,14 @@ include "../Include/header.php"
     </form>
 
 <?php
-$_SESSION['computer'] = 0;
-$_SESSION['player'] = 0;
+//Als de sessie nog niet bestaat , dan effe aanmaken en initialiseren
+if (isset($_SESSION['computer']) == false) {
+    $_SESSION['computer'] = 0;
+    $_SESSION['player'] = 0;
+}
+
 if (isset($_GET['keuze'])) {
-    echo "Jij koos: <img src='../images/{$_GET['keuze']}.jpg'> {$_GET['keuze']} <br>";
+    echo "Jij koos: <img src='images/{$_GET['keuze']}.jpg'> {$_GET['keuze']} <br>";
     $persoonkeuze = $_GET['keuze'];
 
     $opties = array("steen","papier","schaar");
@@ -64,13 +74,18 @@ echo 'De stand is: <br>';
 echo $_SESSION['computer'] . ' voor de computer <br>';
 echo $_SESSION['player'] . ' voor de jou <br>';
 
-if($_SESSION['computer'] = 5){
+if($_SESSION['computer'] == 5){
     echo 'The winner is the computer';
-    session_destroy();
+
+    unset($_SESSION['computer']);
+    unset($_SESSION['player']);
+
 }
-elseif($_SESSION['player'] = 5){
+elseif($_SESSION['player'] == 5){
     echo 'The winner is the player';
-    session_destroy();
+
+    unset($_SESSION['computer']);
+    unset($_SESSION['player']);
 }
 
 
