@@ -26,7 +26,7 @@ function executeQuery($sql)
     try {
         // Query uitvoeren
         $result = $pdo->query($sql);
-        $pdo->exec("DELETE FROM joke WHERE id > 6");
+
         return $result;
     } catch (PDOException $e) {
         echo 'Er is een probleem met ophalen van jokes: ' . $e->getMessage();
