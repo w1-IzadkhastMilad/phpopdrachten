@@ -72,6 +72,7 @@
                         <li><a href="hoofdstuk7/Opdracht_7.1.php">Opdracht 7.1</a></li>
                         <li><a href="hoofdstuk7/Opdracht_7.2.php">Opdracht 7.2</a></li>
                         <li><a href="hoofdstuk7/Opdracht_7.3.php">Opdracht 7.3</a></li>
+                        <li><a href="hoofdstuk7/Opdracht_7.4.php">Opdracht 7.4</a></li>
                     </ul>
                 </li>
             </ul>
