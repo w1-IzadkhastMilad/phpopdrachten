@@ -24,7 +24,7 @@ if (isset($_GET['inputText']) == false){
     $query = "SELECT * FROM joke";
 }
 else {
-    $query = "SELECT * FROM joke WHERE joketext LIKE ". "'%" . $_GET['inputText'] . "%'";
+    $query = "SELECT * FROM joke WHERE joketext LIKE ". "'%" . $_POST['inputText'] . "%'";
 }
 $jokes = executeQuery($query);
 
